@@ -1,10 +1,10 @@
 <?php
 
-namespace payment_system;
+namespace encapsulation_abstraction;
 include_once(__DIR__.'/PaymentMethod.php');
 include_once(__DIR__.'/PaymentProcessor.php');
-use payment_system\PaymentMethod;
-use payment_system\PaymentProcessor;
+use encapsulation_abstraction\PaymentMethod;
+use encapsulation_abstraction\PaymentProcessor;
 class CreditCardPayment extends PaymentProcessor implements PaymentMethod
 {
 

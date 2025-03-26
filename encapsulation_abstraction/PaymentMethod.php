@@ -1,6 +1,6 @@
 <?php
 declare(strict_types=1);
-namespace payment_system;
+namespace encapsulation_abstraction;
 interface PaymentMethod
 {
     const bool APPROVED = true;

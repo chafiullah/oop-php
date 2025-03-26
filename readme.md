@@ -14,8 +14,12 @@ Created a new class Book in a different directory and operated from index.php. I
 Interfaces are sketches/contracts what you must have if you implement that interface. Where abstract classes are blue-prints that can be extended by the class which wants to have the same blue-prints.
 - similarity between interface and abstract class is the methods of interface and abstract methods of abstract class. Both of these methods are defined without a body/implementation(but after php 8.1 they have introduced default implementations). If your class uses one of these procedure, you will be forced to implement the methods defined in the interface/abstract class. 
 - the only dissimilarity is that in abstract classes you can also have properties and concrete methods(public methods) with bodies and proper implementations.
+
 ## Exercise 3 [Inheritance]
 What we get to learn from here is:
 - even in the same namespace, you have to include the external files you are using
 - inside the " $this->variable " you can write the variable without {}.
 - PHP natively does not support functional **overloading** like c++ or java, but you can use the (...) operator. Well this is not the advanced practice right now.
+
+## Exercise 4 [Polymorphism]
+We have already seen the implementation of abstraction and interface in exercise 2. Interface is an actual example of polymorphism. In this example we have seen how we can create a polymorphic function and use it with different objects. We also modularized the code creating a VehicleService class, so that we don't need to declare the function globally which will lead to duplication. 

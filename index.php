@@ -5,14 +5,14 @@ declare(strict_types = 1);
  * This directive helps you with the naming convention, so that you don't have to write the full namespace everytime you access it as a class. So, yes you have to write both.
  */
 use items\Book;
-use payment_system\CreditCardPayment;
+use encapsulation_abstraction\CreditCardPayment;
 
 /**
  * This directive makes the Book.php script executable from this index.php script. Which means all the functionalities of Book.php is now available from index.php. But if you have 10 files in that directory you have to include them exactly the same way 10 times. Tiresome hae! This is why autoloader.php is used. Parser is used inside the autoloader the list all the files in a folder and make them available from any other file in the project.
  *
  */
 include_once(__DIR__ . "/items/Book.php");
-include_once (__DIR__."/payment_system/CreditCardPayment.php");
+include_once (__DIR__ . "/encapsulation_abstraction/CreditCardPayment.php");
 
 /**
  * version 8.3.11
