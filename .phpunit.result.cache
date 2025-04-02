@@ -1,0 +1,1 @@
+{"version":1,"defects":{"tests\\PaymentProcessorTest::testProcessPaymentSuccessful":7,"tests\\PaymentProcessorTest::testProcessPaymentFailure":7},"times":{"tests\\PaymentProcessorTest::testProcessPaymentSuccessful":0.015,"tests\\PaymentProcessorTest::testProcessPaymentFailure":0.001}}

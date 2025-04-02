@@ -26,5 +26,6 @@ We have already seen the implementation of abstraction and interface in exercise
 # Design Patterns
 ## Singleton example: [DatabaseConnection](./design_patterns/DatabaseConnection.php)
 Here in this example you will see a clear example of static property. The connection is made private so that only from the class an instance is created, it's made static so that all other classes share the exact same instances. \_\_clone() prevents from the instance to be duplicated. \_\_wakeup() lets you restore the state after deserialization.
-### Serialization?
+## Serialization?
 Just a reminder: it converts objects into string and vise versa. But you must never serialize properties such as database connections. \_\_wakeup() comes to the picture in such cases. After deserialization all your properties will be converted back to objects but what happens to the database connection? Yes, \_\_wakeup() will re-initialize it. 
+## Dependency Injection [directory](./design_patterns/dependency_injection)
